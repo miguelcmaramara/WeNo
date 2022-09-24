@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Calculator from './models/Calculator'
 import { useState } from "react";
-import Landing from './componenets/Landing'
+import Landing from './Components/Landing'
 
 function App() {
 
