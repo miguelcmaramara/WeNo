@@ -4,8 +4,9 @@ import Calculator from './models/Calculator'
 import Page from './models/Page'
 import { useState } from "react";
 import Landing from './Components/Landing'
-import Slider from './Components/Slider'
-import Prompt from './Components/Prompt'
+import QuestionPage from "./Components/QuestionPage"
+import PromptPage from "./Components/PromptPage"
+import YesNo from "./Components/YesNo"
 
 function App() {
 
@@ -15,9 +16,10 @@ function App() {
   })
   return (
     <div className="App">
-      <Landing page ={percentage.page} setPercentage={setPercentage}/>
-      <Prompt calculator={percentage.calculator} setPercentage={setPercentage}/>
-      <Slider min={0} max={24} id={"temp"} calculator = {percentage.calculator} setPercentage={setPercentage}/>
+      <Landing percentage={percentage} setPercentage={setPercentage}/>
+      <QuestionPage percentage={percentage} setPercentage ={setPercentage}/>
+      <PromptPage percentage={percentage} setPercentage = {setPercentage}/>
+      <YesNo percentage={percentage} setPercentage = {setPercentage}/>
 
       {/* Here should be the login */}
       {/* Props: model */}

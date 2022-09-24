@@ -9,3 +9,10 @@
 .App {
   box-sizing: border-box;
 }
+.visible{
+  display:block;
+}
+
+.hidden{
+  display: none;
+}

@@ -1,8 +1,10 @@
 import "./css/Landing.css"
+import Button from "./Button"
+import "../App.css"
 
 export default function Landing(props){
     return(
-        <div id="Landing">
+        <div id="Landing" className = {props.percentage.page.page==="Landing"? "visible" : "hidden"}>
             <div className="background"></div>
             <div className="text before">
                 <div className="center-text">
@@ -14,8 +16,10 @@ export default function Landing(props){
                 <div className="center-text">
                     <h1 className="title">WeNo</h1>
                     <h3 className="caption">Help us help you</h3>
+                    <Button percentage= {props.percentage} setPercentage = {props.setPercentage} inText = {"Start"} nextPage = {"Questions"}/>
                 </div>
             </div>
+
         </div>
     )
 }

@@ -1,6 +1,5 @@
 export default class Page{
-    constructor(){}
-    Page={
-        Page:""
+    constructor(){  
     }
+    page="Landing";
 }
