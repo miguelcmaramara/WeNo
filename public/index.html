@@ -35,7 +35,7 @@
     <p>Google Calendar API Quickstart</p>
 
     <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    <button id="authorize_button" onclick="handleAuthClick()">Authorizeeee</button>
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
 
     <pre id="content" style="white-space: pre-wrap;"></pre>
@@ -48,7 +48,7 @@
 
       // TODO(developer): Set to client ID and API key from the Developer Console
       const CLIENT_ID = '989622837111-5eo0sipsnb91fjd7tcmrt8crqopcnid4.apps.googleusercontent.com';
-      const API_KEY = '<YOUR_API_KEY>';
+      const API_KEY = 'AIzaSyB6sK4rHd-B_2Edeqg1fKSlHEdYsXvSpls';
 
       // Discovery doc URL for APIs used by the quickstart
       const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
@@ -138,7 +138,7 @@
           google.accounts.oauth2.revoke(token.access_token);
           gapi.client.setToken('');
           document.getElementById('content').innerText = '';
-          document.getElementById('authorize_button').innerText = 'Authorize';
+          document.getElementById('authorize_button').innerText = 'Sign-In';
           document.getElementById('signout_button').style.visibility = 'hidden';
         }
       }
