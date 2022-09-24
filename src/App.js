@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Calculator from './Calculator'
 
 function App() {
   return (
@@ -18,6 +19,14 @@ function App() {
           Learn React
         </a>
       </header>
+
+      {/* Here should be the login */}
+      {/* Props: model */}
+
+      {/* Sliders should be here */}
+      {/* Props: model, slider should */}
+
+
     </div>
   );
 }
