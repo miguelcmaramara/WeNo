@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Calculator from './models/Calculator'
+<<<<<<< HEAD
 import { useState } from "react";
+=======
+import Landing from './componenets/Landing'
+>>>>>>> f3aa4fc (added landing)
 
 function App() {
 
@@ -25,6 +29,7 @@ function App() {
         </a>
       </header>
 
+      <Landing/>
       {/* Here should be the login */}
       {/* Props: model */}
 
