@@ -3,6 +3,7 @@ import './App.css';
 import Calculator from './models/Calculator'
 import { useState } from "react";
 import Landing from './Components/Landing'
+import Slider from './Components/Slider'
 
 function App() {
 
@@ -25,8 +26,8 @@ function App() {
           Learn React
         </a>
       </header>
-
       <Landing/>
+      <Slider/>
       {/* Here should be the login */}
       {/* Props: model */}
 
