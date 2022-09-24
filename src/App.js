@@ -4,6 +4,7 @@ import Calculator from './models/Calculator'
 import { useState } from "react";
 import Landing from './Components/Landing'
 import Slider from './Components/Slider'
+import Prompt from './Components/Prompt'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       </header>
       <Landing/>
       <Slider/>
+      <Prompt/>
       {/* Here should be the login */}
       {/* Props: model */}
 
