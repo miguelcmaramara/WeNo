@@ -4,6 +4,7 @@ import Dropdown from './Dropdown';
 import Textbox from './Textbox';
 
 export default function Prompt(props){
+  var ans = ""
   const submit = (e)=>{
     if(props.calculator.Question())
       ans = "Yes"

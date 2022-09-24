@@ -1,5 +1,0 @@
-class Page{
-    Page={
-        Page:""
-    }
-}

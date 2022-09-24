@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Calculator from './models/Calculator'
+import Page from './models/Page'
 import { useState } from "react";
 import Landing from './Components/Landing'
 import Slider from './Components/Slider'
