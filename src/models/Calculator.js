@@ -1,27 +1,29 @@
-var sleepHours
-var yesNoPref
+export default class Calculator{
+    constructor(){
+    }
+ sleepHours;
+yesNoPref;
 
-function getSleepHours(){
+getSleepHours(){
   return this.sleepHours;
 }
 
-function setSleepHours(sleepHours){
+ setSleepHours(sleepHours){
   this.sleepHours = sleepHours;
 }
 
-function setYesNoPref(yesNoPref){
+ setYesNoPref(yesNoPref){
   this.yesNoPref=yesNoPref;
 }
-
-function getYesNoPref(){
+ getYesNoPref(){
   return this.yesNoPref;
 }
 
-function Question (text, type, DT){
+ Question (text, type, DT){
 
   let randomVal=  Math.random()*100;
 
-  if (randomVal>Calc()){
+  if (randomVal>this.Calc()){
     return true;
   } else {
     return false;
@@ -29,10 +31,8 @@ function Question (text, type, DT){
 
   
 }
-
-
-function Calc() {
+ Calc() {
 
   return 50;
 }
-  
+}

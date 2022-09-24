@@ -1,8 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Calculator from './models/Calculator'
+import { useState } from "react";
 
 function App() {
+
+  const [percentage, setPercentage] = useState({
+    calculator: new Calculator()
+  })
   return (
     <div className="App">
       <header className="App-header">
