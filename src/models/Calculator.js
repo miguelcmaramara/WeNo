@@ -1,25 +1,19 @@
 export default class Calculator{
+
+    
     constructor(){
+
     }
- sleepHours;
-yesNoPref;
+    values={};
 
-getSleepHours(){
-  return this.sleepHours;
-}
+    setMethod(n,value){
+        this.values[n]=value;
+    }
+    getMethod(n){
+        return this.values[n];
+    }
 
- setSleepHours(sleepHours){
-  this.sleepHours = sleepHours;
-}
-
- setYesNoPref(yesNoPref){
-  this.yesNoPref=yesNoPref;
-}
- getYesNoPref(){
-  return this.yesNoPref;
-}
-
- Question (text, type, DT){
+ Question (){
 
   let randomVal=  Math.random()*100;
 

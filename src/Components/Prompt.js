@@ -4,17 +4,24 @@ import Dropdown from './Dropdown';
 import Textbox from './Textbox';
 
 export default function Prompt(props){
-    const [val, setVal] = useState(0);
+  const submit = (e)=>{
+    if(props.calculator.Question())
+      ans = "Yes"
+    else
+      ans = "NO!!!"
+  }
     return(
         <div id="prompt">
           <label>Name of the Event:</label> 
-          <Textbox/>
+          <Textbox id ="name" calculator ={props.calculator}  setPercentage={props.setPercentage}/>
           <label>Type of Event:</label>
           <Dropdown/>
           <label>Please enter the event start time:</label>
-          <DayTime id = "start"/>
+          <DayTime calculator={props.calculator} setPercentage={props.setPercentage} id = "start"/>
           <label>Please enter the event end time:</label>
-          <DayTime id = "end"/>
+          <DayTime calculator={props.calculator} setPercentage={props.setPercentage} id = "end"/>
+          <button onClick={submit}>Submit</button>
+
         </div>
     )  
 }

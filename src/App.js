@@ -9,7 +9,8 @@ import Prompt from './Components/Prompt'
 function App() {
 
   const [percentage, setPercentage] = useState({
-    calculator: new Calculator()
+    calculator: new Calculator(),
+    page: new Page()
   })
   return (
     <div className="App">
@@ -27,9 +28,10 @@ function App() {
           Learn React
         </a>
       </header>
-      <Landing/>
-      <Slider/>
-      <Prompt/>
+      <Landing page ={percentage.page} setPercentage={setPercentage}/>
+      <Prompt calculator={percentage.calculator} setPercentage={setPercentage}/>
+      <Slider min={0} max={24} id={"temp"} calculator = {percentage.calculator} setPercentage={setPercentage}/>
+
       {/* Here should be the login */}
       {/* Props: model */}
 
